@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="645.0" prefWidth="1185.0" stylesheets="@../resource/TonysKinal.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juanyaxon.controller.ServiciosController">
+   <children>
+      <VBox prefHeight="315.0" prefWidth="246.0" styleClass="background3" stylesheets="@../resource/TonysKinal.css" AnchorPane.bottomAnchor="248.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="826.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="314.0" prefWidth="246.0" styleClass="background3" stylesheets="@../resource/TonysKinal.css">
+               <children>
+                  <Label layoutX="71.0" layoutY="89.0" styleClass="tipoletra3" stylesheets="@../resource/TonysKinal.css" text="Servicios" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="131.0" fitWidth="147.0" layoutX="57.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/servicios.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane layoutX="245.0" prefHeight="645.0" prefWidth="949.0" styleClass="background4" stylesheets="@../resource/TonysKinal.css">
+         <children>
+            <Pane layoutX="-245.0" prefHeight="50.0" prefWidth="1194.0" styleClass="background1" stylesheets="@../resource/TonysKinal.css">
+               <children>
+                  <Label layoutX="590.0" layoutY="8.0" style="-fx-text-fill: #bb8b4b;" text="TONY'S KINAL">
+                     <font>
+                        <Font name="Serif Regular" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button layoutY="-5.0" mnemonicParsing="false" onMouseClicked="#menuPrincipal" prefHeight="54.0" prefWidth="154.0" styleClass="button4" text="MENU">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="40.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/MenuLogo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="1006.0" layoutY="-2.0" mnemonicParsing="false" onMouseClicked="#ventanaEmpresas" prefHeight="54.0" prefWidth="188.0" styleClass="button4" text="EMPRESAS">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="40.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/EmpresaIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <GridPane fx:id="grpFecha" layoutX="72.0" layoutY="50.0" prefHeight="151.0" prefWidth="805.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="26.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="txtCodigoServicio" editable="false" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label styleClass="tipoletra4" text="Código Servicio" />
+                  <Label styleClass="tipoletra4" text="Tipo de servicio" GridPane.rowIndex="1" />
+                  <Label styleClass="tipoletra4" text="Lugar de servicio" GridPane.rowIndex="2" />
+                  <Label styleClass="tipoletra4" text="Fecha de servicio" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="txtTipoServicio" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label styleClass="tipoletra4" text="Hora de servicio" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="txtLugarServicio" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label styleClass="tipoletra4" text="Teléfono contacto" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label styleClass="tipoletra4" text="Código Empresa" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="txtTelefonoContacto" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <ComboBox fx:id="cmbCodigoEmpresa" disable="true" prefHeight="27.0" prefWidth="209.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </ComboBox>
+                  <JFXTimePicker fx:id="jfxHoraServicio" defaultColor="#633333" prefHeight="15.0" prefWidth="201.0" style="-fx-cursor: hand;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <JFXDatePicker fx:id="jfxFechaServicio" defaultColor="#633333" prefHeight="20.0" prefWidth="201.0" style="-fx-cursor: hand;" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <TableView fx:id="tblServicios" layoutX="48.0" layoutY="212.0" onMouseClicked="#seleccionarElemento" prefHeight="413.0" prefWidth="882.0">
+               <columns>
+                  <TableColumn fx:id="colCodigoServicio" prefWidth="124.0" text="Cod. Servicio" />
+                  <TableColumn fx:id="colFechaServicio" prefWidth="127.0" text="Fecha Servicio" />
+                  <TableColumn fx:id="colTipoServicio" prefWidth="129.0" text="Tipo Servicio" />
+                  <TableColumn fx:id="colHoraServicio" prefWidth="140.0" text="Hora Servicio" />
+                  <TableColumn fx:id="colLugarServicio" prefWidth="130.0" text="Lugar Servicio" />
+                  <TableColumn fx:id="colTelefono" prefWidth="101.0" text="Teléfono" />
+                  <TableColumn fx:id="colCodigoEmpresa" prefWidth="130.0" text="Cod. Empresa" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <VBox layoutY="302.0" prefHeight="343.0" prefWidth="245.0" styleClass="background5" stylesheets="@../resource/TonysKinal.css">
+         <children>
+            <Button fx:id="btnNuevo" mnemonicParsing="false" onAction="#nuevo" prefHeight="72.0" prefWidth="245.0" styleClass="button2" stylesheets="@../resource/TonysKinal.css" text="Nuevo">
+               <graphic>
+                  <ImageView fx:id="imgNuevo" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" styleClass="imagenes" x="1.0" y="1.0">
+                     <image>
+                        <Image url="@../image/nuevo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="70.0" prefWidth="245.0" styleClass="button2" stylesheets="@../resource/TonysKinal.css" text="Editar">
+               <graphic>
+                  <ImageView fx:id="imgEditar" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" styleClass="imagenes">
+                     <image>
+                        <Image url="@../image/editar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="70.0" prefWidth="245.0" styleClass="button2" stylesheets="@../resource/TonysKinal.css" text="Eliminar">
+               <graphic>
+                  <ImageView fx:id="imgEliminar" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" styleClass="imagenes">
+                     <image>
+                        <Image url="@../image/eliminar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnReporte" mnemonicParsing="false" onAction="#generarReporte" prefHeight="78.0" prefWidth="245.0" styleClass="button2" stylesheets="@../resource/TonysKinal.css" text="Reporte">
+               <graphic>
+                  <ImageView fx:id="imgReporte" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" styleClass="imagenes">
+                     <image>
+                        <Image url="@../image/reporte.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

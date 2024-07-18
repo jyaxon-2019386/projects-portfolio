@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteProductos" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9d7c90a4-639a-44cb-8d0a-06c338030d14">
+	<property name="ireport.zoom" value="1.1000000000000019"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="11"/>
+	<parameter name="RUTA_IMAGEN" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[call sp_ListarProductos();]]>
+	</queryString>
+	<field name="codigoProducto" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreProducto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cantidad" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="752" splitType="Stretch">
+			<image>
+				<reportElement x="135" y="87" width="404" height="591" uuid="4b8d7c80-ed0f-4b3f-bca7-2b2ee2904f00"/>
+				<imageExpression><![CDATA[$P{RUTA_IMAGEN}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="99" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="572" height="99" backcolor="#5A3333" uuid="d22a4edc-1166-4215-8cde-4c6a2239375e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="264" y="22" width="296" height="52" forecolor="#FFFFFF" backcolor="#5A3333" uuid="fc8cefb4-3827-4bd5-a785-0dfacd0fb914"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Reporte de Productos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="135" y="0" width="106" height="99" forecolor="#BB8B4B" backcolor="#5A3333" uuid="fbd14b3d-64f0-4f07-a6b6-f33883857285"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Perpetua" size="26" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Tony's Kinal]]></text>
+			</staticText>
+			<image>
+				<reportElement x="55" y="0" width="100" height="99" uuid="e8f9298d-2843-48db-ab58-27fc5dcd35f8"/>
+				<imageExpression><![CDATA[$P{RUTA_IMAGEN}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="190" height="20" backcolor="#5A3333" uuid="5203b54a-c42e-495a-b1ac-689b3612fe59"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="190" y="0" width="224" height="20" backcolor="#5A3333" uuid="a818b23f-11af-458f-855d-052b310acde0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="414" y="0" width="158" height="20" backcolor="#5A3333" uuid="7dd3a2d2-7f03-4a94-9a91-65dc2eca31e4"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="190" y="0" width="224" height="20" forecolor="#FFFFFF" uuid="677ef298-8552-42c4-9d81-2c992e700e70"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre del producto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="156" height="20" forecolor="#FFFFFF" uuid="a3f049ef-9fe8-4719-a23b-eb9ed0069d24"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cantidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="190" height="20" forecolor="#FFFFFF" uuid="6b7b1c85-3bf1-4404-bb79-e0e5ae9dd7eb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código Producto]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="190" height="20" uuid="40c1d365-2fbb-4b2a-8fc9-f555c990d0d6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="190" y="0" width="224" height="20" uuid="779d8716-3d6a-47f1-9356-511a284ef39f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="414" y="0" width="158" height="20" uuid="fd48c70f-f5ff-4234-9b83-c2966f35968b"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="190" height="20" uuid="fdf4f671-bfde-4510-8e63-3611223d57f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{codigoProducto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="0" width="224" height="20" uuid="13bb5cf8-e67e-4af5-a6bd-2e6370dcc888"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nombreProducto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="156" height="20" uuid="633aec8d-8296-41b3-9b4c-ea6f3b239bb2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cantidad}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="572" height="54" backcolor="#5A3333" uuid="0c2157b2-9c7b-49db-99a8-0c2eb8531921"/>
+			</rectangle>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="460" y="19" width="100" height="20" forecolor="#FFFFFF" uuid="ae9cf85a-b13f-4129-a3a8-72d6181cda14"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="225" y="19" width="148" height="20" forecolor="#FFFFFF" uuid="b6710ee6-db5b-4ad0-9965-cc1858af4095"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[¡Gracias por preferirnos!]]></text>
+			</staticText>
+			<textField pattern="h.mm a">
+				<reportElement x="21" y="19" width="92" height="20" forecolor="#FFFFFF" uuid="fb44a7eb-e913-4c0e-b467-e58ace504174"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

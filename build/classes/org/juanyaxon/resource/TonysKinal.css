@@ -1,0 +1,359 @@
+
+.menu-bar {
+    -fx-background-color: #633333;
+    -fx-font-family: "Montserrat";
+    -fx-pref-height: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 14px; 
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 2, 0, 0, 1);
+    -fx-background-color: linear-gradient(to bottom, #633333, #8c5c3c);
+    -fx-cursor: HAND;
+}
+
+.menu-item {
+    -fx-text-fill: #fff; 
+    -fx-font-size: 16px; 
+    -fx-padding: 0 20px; 
+    -fx-alignment: CENTER; 
+    -fx-cursor: HAND;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 2, 0, 0, 1);
+    -fx-border-color: transparent transparent #8c5c3c transparent;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: transparent transparent #bb8b4b transparent;
+    -fx-font-family: "Montserrat";
+    -fx-cursor: HAND;
+}
+
+.menu-item:focused,
+.menu-item:armed,
+.menu-item:selected 
+
+{
+    -fx-background-color: #bb8b4b;
+    -fx-text-fill: #fff; 
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 4, 0, 0, 2);
+    -fx-font-family: "Montserrat";
+    -fx-background-color: linear-gradient(to bottom, #8c5c3c, #633333);
+}
+
+.tipoletra1 {
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill:  #bb8b4b;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0);
+}
+
+.tipoletra2 {
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #633333;
+}
+
+.background1{
+    -fx-background-color: linear-gradient(to bottom, #633333, #8c5c3c);
+}
+
+.background2{
+  
+    -fx-background-color: linear-gradient(to bottom, #8c5c3c, #633333);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0);
+ 
+}
+
+.button1{
+    -fx-background-color: linear-gradient(to bottom, #8c5c3c, #633333);
+    -fx-background-radius: 30 0 0 30;
+    -fx-text-fill: white; 
+}
+
+.button1:hover{
+    -fx-background-color: black;
+    -fx-background-radius: 30 0 0 30;
+    -fx-text-fill: white; 
+}
+
+.tipoletra3 {
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER; 
+    -fx-text-fill: #bb8b4b;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0);
+}
+
+.tipoletra5 {
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER; 
+    -fx-text-fill: #bb8b4b;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0);
+}
+.button2 {
+    -fx-text-fill: #CCCCCC; 
+    -fx-font-size: 15px; 
+    -fx-padding: 0 20px; 
+    -fx-alignment: CENTER; 
+    -fx-background-color: #633333;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent transparent #8c5c3c transparent;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: transparent transparent #bb8b4b transparent;
+    -fx-font-family: "Montserrat";
+}
+
+.button2:hover{
+    -fx-outline-offset: 4.5px; 
+    -fx-background-color: linear-gradient(to bottom, #bb8b4b, #bb8b4b);
+    -fx-outline-offset: 5.5px;
+    -fx-transition: all 0.3s ease;
+    -fx-cursor: HAND;               
+}
+
+.button2:pressed{
+    -fx-background-color: linear-gradient(to bottom, #8c5c3c, #633333); 
+}
+
+.background3{
+    -fx-background-color: linear-gradient(to bottom, #8c5c3c, #633333);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0);
+}
+
+.background4{
+    -fx-background-color:#8c5c3c;
+    
+}
+
+.home{
+    -fx-cursor: HAND; 
+}
+
+.button4{
+   -fx-text-fill: #CCCCCC; 
+   -fx-font-size: 15px; 
+   -fx-padding: 0 20px; 
+   -fx-alignment: CENTER; 
+   -fx-background-color: #633333;
+   -fx-font-weight: bold;
+   -fx-background-color: linear-gradient(to bottom, #633333, #8c5c3c);
+   -fx-border-width: 0 0 2px 0;
+   -fx-cursor: HAND;
+    -fx-font-family: "Montserrat";
+}
+
+.button4:hover{
+   -fx-outline-offset: 4.5px; 
+   -fx-background-color: linear-gradient(to bottom, #8c5c3c, #8c5c3c);
+   -fx-outline-offset: 5.5px;
+   -fx-transition: all 0.3s ease;           
+}
+
+.button4:pressed{
+    -fx-background-color: linear-gradient(to bottom, #8c5c3c, #633333); 
+}
+
+.background5{
+  -fx-background-color: #633333;
+}
+
+.table-column {
+ -fx-base:#633333;
+ -fx-font-weight: bold;
+ -fx-font-family: "Montserrat";
+ -fx-font-size: 13px; 
+ -fx-padding: 0 20px;
+}
+
+.table-view{
+    -fx-cursor: HAND;
+}
+
+.tipoletra4{
+   -fx-text-fill: #CCCCCC; 
+   -fx-font-size: 14px; 
+   -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0);
+   -fx-font-weight: bold;
+}
+
+
+.root {
+    /*-fx-base: dodgerblue; */
+}
+
+.datepicker-invalid {
+    -fx-border-color: red;
+}
+
+.datepicker-valid {
+    -fx-border-color: null;
+}
+
+.calendar {
+}
+
+.calendar-header {
+    -fx-background-color:#633333 ;
+    -fx-font-weight: bold;
+    -fx-font-family: "Montserrat";
+    -fx-padding: 0.5em;
+}
+
+.calendar-footer {
+    -fx-background-color:#633333 ;
+    -fx-padding: 0.2em;
+    -fx-font-weight: bold;
+    -fx-font-family: "Montserrat";
+}
+
+.calendar-month-view, .calendar-year-view, .calendar-decades-view {
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-base,80%), derive(-fx-base,40%)); 
+    -fx-padding: 0;
+}
+
+.calendar-cell-current-month, .calendar-year-button, .calendar-month-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-cursor: hand;
+    -fx-padding: 0.7em;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+.calendar-cell-current-month:hover, .calendar-year-button:hover, .calendar-month-button:hover {
+    -fx-background-color: #9F6F6F;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}
+
+.calendar-cell-other-month {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-opacity: 0.7;
+    -fx-cursor: hand;
+    -fx-padding: 0.7em;
+    -fx-background-radius: 8;
+}
+
+.calendar-cell-other-month:hover {
+    -fx-background-color: #9F6F6F;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}
+
+.calendar-cell-today {
+     -fx-background-color: #633333;
+     -fx-background-radius: 20;
+     -fx-text-fill: white;
+}
+
+.calendar-navigation-button, .calendar-navigation-title, .calendar-today-button {
+    -fx-background-color: null;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+}
+
+.calendar-navigation-title:disabled {
+    -fx-opacity: 1;
+}
+
+.calendar-navigation-arrow {
+    -fx-padding: 4 3.5 4 3.5;
+    -fx-padding: 0.333333em 0.333333em 0.333333em 0.333333em;
+    -fx-shape: "M 100 100 L 300 100 L 200 300 z";
+    -fx-background-color: #ffffff;
+}
+
+.calendar-weekdays {
+    -fx-background-color: -fx-body-color;
+    -fx-padding: 3px;
+}
+
+.calendar-week-number {
+    -fx-font-size: 0.8em;
+    -fx-padding: 4px;
+}
+
+
+* {
+    -fx-primary-color: #5ab8e9;
+    -fx-secondary-color: #4B6EAF;
+    -fx-grey-color: #b9b9b9;
+    -fx-focus-color: -fx-secondary-color;
+}
+
+.text-field {
+    -fx-accent: -fx-primary-color;
+    -fx-background-color: -fx-grey-color, white;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+.text-field:focused {
+	-fx-background-color: -fx-primary-color, white;
+}
+
+.combo-box {
+    -fx-background-color: #f5f5f5;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+}
+
+.combo-box .arrow-button .arrow {
+    -fx-background-color: #666666;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #333333;
+}
+
+.combo-box .list-view {
+    -fx-background-color: #5ab8e9;
+    -fx-background-insets: 0;
+}
+
+.combo-box .list-view .list-cell {
+    -fx-padding: 8px;
+}
+
+.combo-box .list-view .list-cell:hover {
+    -fx-background-color: #5ab8e9;
+    -fx-cursor: hand;
+}
+
+.combo-box .list-view .list-cell:selected {
+    -fx-background-color: #007acc;
+    -fx-text-fill: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteEmpresas" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2d6e48f5-5568-477d-b10e-50b07f1d3cba">
+	<property name="ireport.zoom" value="1.0000000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="RUTA_IMAGEN" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[call sp_ListarEmpresas();]]>
+	</queryString>
+	<field name="codigoEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="752" splitType="Stretch">
+			<image>
+				<reportElement x="77" y="36" width="485" height="610" uuid="dcb40587-95b8-4bbf-9a2b-3e10c741f87d"/>
+				<imageExpression><![CDATA[$P{RUTA_IMAGEN}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="111" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="572" height="111" backcolor="#5A3333" uuid="dea5352f-c0e3-4c48-8d47-db24bbb68f6b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="261" y="0" width="288" height="104" forecolor="#FFFFFF" backcolor="#5A3333" uuid="8428742a-28bd-4fdb-813e-ac647f841122"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Reporte de Empresas]]></text>
+			</staticText>
+			<image>
+				<reportElement x="37" y="0" width="206" height="111" uuid="ffc62b0e-f7af-4dd0-af9c-de4e6647e02b"/>
+				<imageExpression><![CDATA[$P{RUTA_IMAGEN}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="110" y="1" width="103" height="110" forecolor="#BB8B4B" backcolor="#5A3333" uuid="b40370be-947e-4b09-afe9-bdd335e83427"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Perpetua" size="26" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Tony's Kinal]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="41" splitType="Stretch">
+			<rectangle>
+				<reportElement x="454" y="0" width="118" height="20" backcolor="#5A3333" uuid="559c958a-18ba-4013-aba5-0c1f94fc33d4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="102" height="20" backcolor="#5A3333" uuid="50e34ab6-9398-4ad5-8e83-2f7c110ab74d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="102" y="0" width="124" height="20" backcolor="#5A3333" uuid="cc432939-27b6-4eae-b67c-171f65b32050"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="0" width="228" height="20" backcolor="#5A3333" uuid="4058497f-9821-453f-b95b-a3934cd6d0b0"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="454" y="0" width="118" height="20" forecolor="#FFFFFF" uuid="01d11c24-deaa-4ded-a0fe-ed94e8409fa9"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Teléfono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="226" y="0" width="228" height="20" forecolor="#FFFFFF" uuid="064d302d-b0b8-4d99-be12-633b5c7cb4cc"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="102" y="0" width="124" height="20" forecolor="#FFFFFF" uuid="de1a9ee0-d372-4936-affa-cd404bf48400"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Nombre de empresa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="102" height="20" forecolor="#FFFFFF" uuid="6adeeb1b-73a3-47a4-90f2-de6385822b5b"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Cod. Empresa]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<rectangle>
+				<reportElement x="226" y="0" width="228" height="28" backcolor="#FFFFFF" uuid="d1c0fbe1-eb7e-4604-9029-7d05c7731f98"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="102" height="28" backcolor="#FFFFFF" uuid="91576d97-3e79-43cd-b718-7d854579219a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="454" y="0" width="118" height="28" backcolor="#FFFFFF" uuid="ee67b6bc-fb63-4429-bc3d-53227ef3e916"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="102" y="0" width="124" height="28" backcolor="#FFFFFF" uuid="9926f6af-7822-4ae1-a03d-13fabeb5b0cb"/>
+			</rectangle>
+			<textField>
+				<reportElement x="454" y="0" width="118" height="28" uuid="0a1e64a9-4c13-4a37-913b-921a8063a986"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="102" height="28" uuid="ece7a9c1-10f8-4542-a17f-3fda10852223"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{codigoEmpresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="0" width="124" height="28" uuid="7e79fcdd-d2e2-495a-9a81-1cab86be2e06"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nombreEmpresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="226" y="0" width="228" height="28" uuid="e2407a76-9299-4065-8ae8-0bdcb1994d00"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="572" height="54" backcolor="#5A3333" uuid="37ed1869-04e2-4c81-b607-fd7769f0f2ec"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="224" y="15" width="148" height="20" forecolor="#FFFFFF" uuid="da6163cb-7d80-42cc-a1ef-3a5ea3b1d81c"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[¡Gracias por preferirnos!]]></text>
+			</staticText>
+			<textField pattern="h.mm a">
+				<reportElement x="37" y="15" width="92" height="20" forecolor="#FFFFFF" uuid="386a6e08-858b-4a22-b4a8-52ba76c23ad1"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="454" y="15" width="100" height="20" forecolor="#FFFFFF" uuid="5781b2de-e331-47af-a8aa-a0c206ca5402"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
