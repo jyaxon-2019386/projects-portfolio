@@ -5,7 +5,7 @@ import morgan from 'morgan'
 import helmet from 'helmet'
 import cors from 'cors'
 import { config } from "dotenv"
-import tareasRoutes from '../src/task/task.routes.js'
+import taskRoutes from '../src/task/task.routes.js'
 
 //Configuraciones
 const app = express()
@@ -20,7 +20,7 @@ app.use(helmet()) //Aplica capa de seguridad básica al servidor
 app.use(morgan('dev')) //Logs de solicitudes al servidor HTTP
 
 //Declaración de rutas
-app.use(tareasRoutes)
+app.use(taskRoutes)
 
 //Levantar el servidor
 export const initServer = () => {
