@@ -1,0 +1,15 @@
+org.juanpabloyaxon.vista.VentanaRegistroAlumnos$3
+org.juanpabloyaxon.vista.VentanaRegistroAlumnos$4
+org.juanpabloyaxon.vista.VentanaRegistroAlumnos$1
+org.juanpabloyaxon.vista.VentanaRegistroAlumnos$2
+org.juanpabloyaxon.vista.VentanaRegistroAlumnos
+org.juanpabloyaxon.vista.VentanaRegistroClientes$2
+org.juanpabloyaxon.vista.VentanaRegistroClientes$1
+org.juanpabloyaxon.vista.PanelDeImagen
+org.juanpabloyaxon.vista.VentanaRegistroClientes$6
+org.juanpabloyaxon.vista.VentanaRegistroClientes$5
+org.juanpabloyaxon.vista.VentanaRegistroClientes$4
+org.juanpabloyaxon.vista.VentanaRegistroClientes
+org.juanpabloyaxon.vista.VentanaRegistroAlumnos$5
+org.juanpabloyaxon.vista.VentanaRegistroClientes$3
+org.juanpabloyaxon.vista.VentanaRegistroAlumnos$6
