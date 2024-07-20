@@ -1,5 +1,4 @@
-'use strict'
-import mongoose from "mongoose"
+import mongoose from "mongoose";
 
 export const connect = async () => {
     try {
@@ -31,3 +30,4 @@ export const connect = async () => {
         console.error('Database connection failed', err)
     }
 }
+
